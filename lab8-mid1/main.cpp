@@ -65,9 +65,9 @@ int main() {
     system("chcp 1251 > nul");
     setlocale(LC_ALL, "Russian");
 
-    vector<int> sizes = { 32, 128, 512, 1024 }; 
+    vector<int> sizes = { 64, 256, 1024, 4096 }; 
     int iterations = 10;
-    int numThreads = 4; 
+    int numThreads = 5; 
 
     ofstream file("results.csv");
     file << "MatrixSize(N),Type,Time(seconds)\n";
